@@ -1,0 +1,5 @@
+[project]
+name = "drawing-bot"
+version = "0.1.0"
+description = "Telegram bot for drawing streaks"
+requires-python = ">=3.10,<3.11"
