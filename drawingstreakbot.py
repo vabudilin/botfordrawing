@@ -89,7 +89,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Главный запуск
 async def main():
-    token = os.environ.get("BOT_TOKEN")
+    token = os.environ.get("8140971779:AAEmPDX6kOu2w22Fg8lGkQPW00YTj5Fqngg")
     app = ApplicationBuilder().token(token).build()
 
     app.add_handler(CommandHandler("start", start))
