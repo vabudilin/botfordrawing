@@ -9,6 +9,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Messa
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+token = os.environ.get("BOT_TOKEN")
+
 DATA_FILE = "user_data.json"
 
 def load_data():
@@ -89,7 +91,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Главный запуск
 async def main():
-    token = os.environ.get("8140971779:AAEmPDX6kOu2w22Fg8lGkQPW00YTj5Fqngg")
+
     app = ApplicationBuilder().token(token).build()
 
     app.add_handler(CommandHandler("start", start))
